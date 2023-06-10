@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html>
  
-<head>
-    <title>Getting Clients IP</title>
-    <style>
-    p {
-        color: red;
-    }
-    </style>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     
-      <script>
-     
-    /* 
-    "https://api.ipify.org?format=json" 
-    $.getJSON 
-    
-    */
-                
-    $.getJSON("https://api.ipify.org?format=json", function(data) {
-        $("#ip").html(data.ip);
-    })
-    </script>
-</head>
- 
-<body>
-    <center>
-        <h3>Your Public IP Address is:</h3>
-        <p id="ip"></p>
- 
-    </center>
-</body>
+   <head>
+       <title>Getting Clients IP</title>
+       <style>
+          p {
+              color: red;
+          }
+       </style>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+       <script>
+          /* 
+          "https://api.ipify.org?format=json" 
+          $.getJSON 
+
+          */
+
+          $.getJSON("https://api.ipify.org?format=json", function(data) {
+              $("#ip").html(data.ip);
+          })
+       </script>
+   </head>
+
+   <body>
+       <center>
+           <h3>Your Public IP Address is:</h3>
+           <p id="ip"></p>
+       </center>
+   </body>
  
 </html>
