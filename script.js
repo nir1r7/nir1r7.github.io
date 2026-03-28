@@ -1,9 +1,9 @@
 
 
-$.getJSON("https://api.ipify.org?format=json", function(data) {
-  $("#ip").html(data.ip);
-})
+// $.getJSON("https://api.ipify.org?format=json", function(data) {
+//   $("#ip").html(data.ip);
+// })
 
-function func() {
+// function func() {
   
-}
+// }
